@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+body {
+  color: white;
+  background-color:
+  black;
+}
+
+ul {
+  list-style: none;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media screen and (max-width: 599px) {
+  .App {
+    height: auto;
+  }
+}
+
+h1.mainHeading, .detail, .backBtn {
+  margin: 20px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+}
+
+h1.mainHeading {
+  font-size: 35px;
+  color: yellow;
+}
+
+.memberDetail {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.memberDetail img {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.detail{
+  font-size: 20px;
+  color: white;
+}
+.detail .detEm{
+  color: yellow;
+}
+
+.backBtn {
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  color: yellow;
+  margin: 10px auto;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  max-width: 700px;
+}
+
+.card{
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.card .cardLink {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  width: fit-content;
+}
+
+.card .bubbleImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .bubbleImage {
+    width: 200px;
+    height: 200px;
+  }
+}
